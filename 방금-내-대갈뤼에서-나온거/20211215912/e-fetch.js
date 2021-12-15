@@ -7,8 +7,8 @@
   "use strict";
   var _ef={};
   //-------------------------------------
-  _ef.isEmpty=function(obj) { 
-    return isEmpty(obj);
+  _ef.createCommunity=function(type,data) { 
+    return createCommunity(type,data);
   };
   return _ef;
   //-------------------------------------
@@ -16,10 +16,7 @@
     console.log("\"매우 생즈하군..\"\n         -EHackC");
     return _ef;
   }
-  function isEmpty(obj){
+  function createCommunity(type,data){/*글 등록*/
     return (obj==null||obj==undefined);
-  }
-  function isBlank(str){
-    return (!str||str.trim().length===0);
   }
 })();
